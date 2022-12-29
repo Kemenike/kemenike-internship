@@ -5,6 +5,14 @@ import Landing from "../components/home/Landing";
 import LandingIntro from "../components/home/LandingIntro";
 import NewItems from "../components/home/NewItems";
 import TopSellers from "../components/home/TopSellers";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+  once: true,
+  duration: 1000,
+  delay: 200,
+});
 
 const Home = () => {
   useEffect(() => {
@@ -14,7 +22,7 @@ const Home = () => {
   return (
     <div id="wrapper">
       <div className="no-bottom no-top" id="content">
-        <div id="top"></div>
+        <div id="top" ></div>
         <Landing />
         <LandingIntro />
         <HotCollections />

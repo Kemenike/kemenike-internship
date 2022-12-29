@@ -51,7 +51,7 @@ const ExploreItems = () => {
 
   return (
     <>
-      <div>
+      <div data-aos="fade-up">
         <select
           id="filter-items"
           defaultValue=""
@@ -63,6 +63,7 @@ const ExploreItems = () => {
           <option value="likes_high_to_low">Most liked</option>
         </select>
       </div>
+      <div className="row" data-aos="fade-up">
       {loading
         ? new Array(8).fill(0).map((_, index) => (
           <LoadingCard key={index} />
@@ -81,6 +82,7 @@ const ExploreItems = () => {
           </Link>
         </div>
       }
+      </div>
     </>
   );
 };
