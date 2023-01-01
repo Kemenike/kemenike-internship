@@ -12,11 +12,6 @@ const Author = () => {
   const [loaded, setLoaded] = useState(false);
   const [followed, setFollowed] = useState(false);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    getAuthor();
-  }, []);
-
   async function getAuthor() {
     const { data } = await axios.get(
       `https://us-central1-nft-cloud-functions.cloudfunctions.net/authors?author=${id}`
@@ -24,6 +19,13 @@ const Author = () => {
     setAuthor(data);
     setLoaded(true);
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    getAuthor();
+  }, []);
+
+
 
   function followButtonClicked() {
     if (followed) { setFollowed(false) }
@@ -136,7 +138,7 @@ const Author = () => {
                     <div className="row" data-aos="fade-up">
                       {
                         new Array(4).fill(0).map((_, index) => (
-                          <LoadingCard index={index} />
+                          <LoadingCard key={index} index={index} />
                         ))
                       }
                     </div>
