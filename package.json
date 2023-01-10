@@ -1,7 +1,7 @@
 {
   "name": "nft-marketplace",
   "version": "0.1.0",
-  "homepage": "http://kemenike.github.io/kemenike-internship",
+  "homepage": "https://kemenike.github.io/kemenike-internship",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -29,7 +29,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build", 
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
