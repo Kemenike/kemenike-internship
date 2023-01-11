@@ -11,10 +11,10 @@ function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="author/:id" element={<Author />} />
-        <Route path="item-details/:id" element={<ItemDetails />} />
+        <Route path="/kemenike-internship/" element={<Home />} />
+        <Route path="/kemenike-internship/explore" element={<Explore />} />
+        <Route path="/kemenike-internship/author/:id" element={<Author />} />
+        <Route path="/kemenike-internship/item-details/:id" element={<ItemDetails />} />
       </Routes>
       <Footer />
     </Router>
