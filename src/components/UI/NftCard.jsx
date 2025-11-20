@@ -26,7 +26,7 @@ const NftCard = ({ nftItem }) => {
               />
             </div>
           }
-          <div className="nft__item_wrap">s
+          <div className="nft__item_wrap">
             <Link to={`/item-details/${nftItem.nftId}`}>
               <img src={nftItem.nftImage} className="lazy nft__item_preview" alt="" />
             </Link>
@@ -47,3 +47,4 @@ const NftCard = ({ nftItem }) => {
 }
 
 export default NftCard;
+
